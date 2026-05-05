@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIY Chem. | Research</title>
+  <meta name="description" content="材料化学の在野研究者によるDIY Chem.の研究成果・メモ・リンク集">
+  <link rel="canonical" href="https://diychem.jp/research.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="mobile-header">
+    <div class="mobile-brand">DIY <span>Chem.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="app-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="site-brand">
+        <h1>DIY <span>Chem.</span></h1>
+        <p>Research & Archives</p>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">ホーム / Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">私たち / About Us</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
+            <ul class="sub-menu" id="submenu-research">
+              <li><a href="research.html" class="nav-link">研究一覧</a></li>
+              <li><a href="research.html?tag=Synthesis" class="nav-link">設計と合成</a></li>
+              <li><a href="research.html?tag=Database" class="nav-link">データベース</a></li>
+              <li><a href="research.html?tag=Methodology" class="nav-link">新しい手法</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
+            <ul class="sub-menu" id="submenu-memo">
+              <li><a href="memo.html" class="nav-link">メモ一覧</a></li>
+              <li><a href="memo.html?tag=DIY" class="nav-link">器具の自作</a></li>
+              <li><a href="memo.html?tag=Scripting" class="nav-link">スクリプト</a></li>
+              <li><a href="memo.html?tag=Workflow" class="nav-link">ワークフロー</a></li>
+              <li><a href="memo.html?tag=Management" class="nav-link">試薬・管理</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="page-header mb-4">
+        <h1 id="page-title">研究 / Research</h1>
+        <p>物質の設計、データ分析、および新手法のアーカイブ</p>
+      </div>
+      <div class="card-grid" id="card-container">
+        <!-- Card 1 -->
+        <article class="card" data-tag="Synthesis">
+          <span class="card-tag">Synthesis</span>
+          <h3>新規有機無機ハイブリッド材料の合成ルート開拓</h3>
+          <p>安価な原料を用いた、環境負荷の少ない新しい合成プロセスの検討と初期のキャラクタリゼーション結果。</p>
+          <div class="card-footer">
+            <time datetime="2026-05-01">2026.05.01</time>
+            <a href="research-article-1.html" style="font-weight:600;">続きを読む &rarr;</a>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card" data-tag="Database">
+          <span class="card-tag">Database</span>
+          <h3>オープンデータを用いた触媒性能の予測モデル</h3>
+          <p>公開されている材料データベースをスクレイピングし、簡便な機械学習モデルで触媒の活性を予測する試み。</p>
+          <div class="card-footer">
+            <time datetime="2026-03-22">2026.03.22</time>
+            <a href="research-article-2.html" style="font-weight:600;">続きを読む &rarr;</a>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card" data-tag="Methodology">
+          <span class="card-tag">Methodology</span>
+          <h3>安価なセンサーを活用した簡易分光分析法の検討</h3>
+          <p>市販のカラーセンサーとLEDを組み合わせ、溶液の濃度を定量するための自作分析モジュールの提案。</p>
+          <div class="card-footer">
+            <time datetime="2026-02-10">2026.02.10</time>
+            <a href="research-article-3.html" style="font-weight:600;">続きを読む &rarr;</a>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card" data-tag="Synthesis">
+          <span class="card-tag">Synthesis</span>
+          <h3>環境負荷の少ない溶媒を用いた再結晶プロセスの最適化</h3>
+          <p>毒性の高い有機溶媒を代替するための、グリーンケミストリーに基づいた再結晶条件のスクリーニング。</p>
+          <div class="card-footer">
+            <time datetime="2026-01-05">2026.01.05</time>
+            <a href="research-article-4.html" style="font-weight:600;">続きを読む &rarr;</a>
+          </div>
+        </article>
+      </div>
+      <div id="no-cards-msg" style="display:none; margin-top:2rem; color:#666;">該当する記事が見つかりません。</div>
+    </main>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIY Chem. | Home</title>
+  <meta name="description" content="材料化学の在野研究者によるDIY Chem.の研究成果・メモ・リンク集">
+  <link rel="canonical" href="https://diychem.jp/">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="mobile-header">
+    <div class="mobile-brand">DIY <span>Chem.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="app-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="site-brand">
+        <h1>DIY <span>Chem.</span></h1>
+        <p>Research & Archives</p>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">ホーム / Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">私たち / About Us</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
+            <ul class="sub-menu" id="submenu-research">
+              <li><a href="research.html" class="nav-link">研究一覧</a></li>
+              <li><a href="research.html?tag=Synthesis" class="nav-link">設計と合成</a></li>
+              <li><a href="research.html?tag=Database" class="nav-link">データベース</a></li>
+              <li><a href="research.html?tag=Methodology" class="nav-link">新しい手法</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
+            <ul class="sub-menu" id="submenu-memo">
+              <li><a href="memo.html" class="nav-link">メモ一覧</a></li>
+              <li><a href="memo.html?tag=DIY" class="nav-link">器具の自作</a></li>
+              <li><a href="memo.html?tag=Scripting" class="nav-link">スクリプト</a></li>
+              <li><a href="memo.html?tag=Workflow" class="nav-link">ワークフロー</a></li>
+              <li><a href="memo.html?tag=Management" class="nav-link">試薬・管理</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section class="hero">
+        <h2>Welcome to DIY Chem.</h2>
+        <p>このサイトは、材料化学の在野研究者による、日々の研究記録、技術的な考察メモ、および有用なリソースを整理するための個人的なアーカイブです。https://diychem.jp/ として情報を公開しています。</p>
+        <div class="flex-row-gap mt-4">
+          <a href="research.html" class="btn btn-primary">研究を見る</a>
+          <a href="memo.html" class="btn btn-outline">メモを読む</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>最新の活動 / Latest Updates</h2>
+        <div class="card-grid">
+          <article class="card" data-tag="Synthesis">
+            <span class="card-tag">Research</span>
+            <h3>新規有機無機ハイブリッド材料の合成ルート開拓</h3>
+            <p>安価な原料を用いた、環境負荷の少ない新しい合成プロセスの検討を行いました。</p>
+            <div class="card-footer">
+              <time datetime="2026-05-01">2026.05.01</time>
+              <a href="research-article-1.html" style="font-weight:600;">詳細へ &rarr;</a>
+            </div>
+          </article>
+          <article class="card" data-tag="DIY">
+            <span class="card-tag memo">Memo</span>
+            <h3>Arduinoを用いた温度制御モジュールの作成</h3>
+            <p>市販のヒーターとセンサーを組み合わせ、実験用の安価な精密温度制御系を自作した手順のまとめ。</p>
+            <div class="card-footer">
+              <time datetime="2026-04-28">2026.04.28</time>
+              <a href="memo-article-1.html" style="font-weight:600;">詳細へ &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

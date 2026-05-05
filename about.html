@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIY Chem. | About Us</title>
+  <meta name="description" content="材料化学の在野研究者によるDIY Chem.の研究成果・メモ・リンク集">
+  <link rel="canonical" href="https://diychem.jp/about.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="mobile-header">
+    <div class="mobile-brand">DIY <span>Chem.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="app-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="site-brand">
+        <h1>DIY <span>Chem.</span></h1>
+        <p>Research & Archives</p>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">ホーム / Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">私たち / About Us</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
+            <ul class="sub-menu" id="submenu-research">
+              <li><a href="research.html" class="nav-link">研究一覧</a></li>
+              <li><a href="research.html?tag=Synthesis" class="nav-link">設計と合成</a></li>
+              <li><a href="research.html?tag=Database" class="nav-link">データベース</a></li>
+              <li><a href="research.html?tag=Methodology" class="nav-link">新しい手法</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
+            <ul class="sub-menu" id="submenu-memo">
+              <li><a href="memo.html" class="nav-link">メモ一覧</a></li>
+              <li><a href="memo.html?tag=DIY" class="nav-link">器具の自作</a></li>
+              <li><a href="memo.html?tag=Scripting" class="nav-link">スクリプト</a></li>
+              <li><a href="memo.html?tag=Workflow" class="nav-link">ワークフロー</a></li>
+              <li><a href="memo.html?tag=Management" class="nav-link">試薬・管理</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="page-header mb-4">
+        <h1>私たち / About Us</h1>
+        <p>DIY Chem. の目的と活動内容について</p>
+      </div>
+      <section class="mb-4">
+        <h2>プロフィール</h2>
+        <p>材料化学の分野において、所属機関を持たずに独立して研究を行う在野研究者（DIY Chem.）です。高価な実験設備に頼らず、身近な材料とオープンソース技術を活用した「DIY」アプローチで化学の探求を行っています。</p>
+        <p>当サイト（https://diychem.jp/）は、日々の実験記録、合成結果、そしてデータ分析の手法を整理し、広く共有するためのプラットフォームです。</p>
+      </section>
+      <section>
+        <h2>研究テーマ</h2>
+        <ul>
+          <li class="mb-2"><strong>① 物質の設計と合成</strong>: 安価で入手しやすい原料から、新規な機能性材料（有機無機ハイブリッドなど）を設計・合成する手法の開拓。</li>
+          <li class="mb-2"><strong>② データベースの作成と分析</strong>: オープンデータを活用した物性予測や、自身で測定した実験データの体系的なデータベース化と機械学習の適用。</li>
+          <li class="mb-2"><strong>③ 新しい研究手法の提案</strong>: 3Dプリンタやマイコンを活用した自作の実験装置や、安価なセンサーを用いた簡易的な測定・分析手法の構築。</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
