@@ -3,10 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DIY Chem. | オープンデータを用いた触媒性能の予測モデル</title>
+  <title>DIY Chem. | Al-Fe-Cu準結晶を形成する組成の調査</title>
   <meta name="description" content="材料化学の在野研究者によるDIY Chem.の研究成果・メモ・リンク集">
   <link rel="canonical" href="https://diychem.jp/research-article-2.html">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF80B3JYTM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SF80B3JYTM');
+  </script>
 </head>
 <body>
   <header class="mobile-header">
@@ -26,46 +35,49 @@
         <h1>DIY <span>Chem.</span></h1>
         <p>Research & Archives</p>
       </div>
-      <nav class="nav-menu">
+            <nav class="nav-menu">
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html" class="nav-link">ホーム / Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">私たち / About Us</a></li>
           <li class="nav-item">
             <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-research">
-              <li><a href="research.html" class="nav-link">研究一覧</a></li>
-              <li><a href="research.html?tag=Synthesis" class="nav-link">設計と合成</a></li>
-              <li><a href="research.html?tag=Database" class="nav-link">データベース</a></li>
-              <li><a href="research.html?tag=Methodology" class="nav-link">新しい手法</a></li>
+              <li><a href="research-article-1.html" class="nav-link">混合原子価酸化物の合成方法の検討</a></li>
+              <li><a href="research-article-2.html" class="nav-link">Al-Fe-Cu準結晶を形成する組成の調査</a></li>
+              <li><a href="research-article-3.html" class="nav-link">無機材料データベースからの新規構造探索</a></li>
+              <li><a href="research-article-4.html" class="nav-link">機械学習を用いた相図の予測手法</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-memo">
-              <li><a href="memo.html" class="nav-link">メモ一覧</a></li>
-              <li><a href="memo.html?tag=DIY" class="nav-link">器具の自作</a></li>
-              <li><a href="memo.html?tag=Scripting" class="nav-link">スクリプト</a></li>
-              <li><a href="memo.html?tag=Workflow" class="nav-link">ワークフロー</a></li>
-              <li><a href="memo.html?tag=Management" class="nav-link">試薬・管理</a></li>
+              <li><a href="memo-article-1.html" class="nav-link">ヤフーオークションの活用</a></li>
+              <li><a href="memo-article-2.html" class="nav-link">配位数に依存しないイオン半径の検討</a></li>
+              <li><a href="memo-article-3.html" class="nav-link">XRD測定時間短縮の検討</a></li>
+              <li><a href="memo-article-4.html" class="nav-link">データベースの活用</a></li>
             </ul>
           </li>
           <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
+          <li class="nav-item"><a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a></li>
         </ul>
       </nav>
     </aside>
 
     <main class="main-content">
       <div class="page-header mb-4">
-        <span class="card-tag">Database</span>
-        <h1 style="margin-top:0.5rem; border:none; padding:0;">オープンデータを用いた触媒性能の予測モデル</h1>
-        <p>2026.03.22</p>
+        <span class="card-tag">Synthesis</span>
+        <h1 style="margin-top:0.5rem; border:none; padding:0;">Al-Fe-Cu準結晶を形成する組成の調査</h1>
+        <p>2026.04.29</p>
       </div>
       <div class="article-content" style="max-width: 800px;">
-        <p>公開されている材料データベースをスクレイピングし、簡便な機械学習モデルで触媒の活性を予測する試みです。</p>
-        <h2>データ収集</h2>
-        <p>Materials Project等のオープンアクセスデータベースから、特定の遷移金属酸化物のデータを抽出しました。</p>
-        <h2>分析アプローチ</h2>
-        <p>Pythonとscikit-learnを用い、ランダムフォレストによる回帰モデルを構築。少量のパラメータで一定の予測精度を得ることに成功しました。</p>
+        <h2>背景</h2>
+        <p>Al-Cu-Fe準結晶は構成元素がすべてユビキタスであり、準結晶も熱力学的に安定相であるためDIYに適した研究対象であるが、報告されている組成には幅があるため詳細な組成調査が必要である。</p>
+        <h2>結論</h2>
+        <p>各種金属原料を混合・加熱し、粉砕・混合・再加熱を繰り返すことで、Al62.5Cu25.0Fe12.5の近傍の組成で、3次元の準結晶であるi相が得られた。</p>
+        <h2>補足</h2>
+        <p>各種金属原料は延性があるため、一度混合して仮焼することで脆性の金属間化合物を形成し、粉砕しやすくすることで微細な混合が可能になり、均一な相の形成が促進される。</p>
+        <h2>引用文献</h2>
+        <p>[1] XXXX<br>[2] XXXX<br>[3] XXXX</p>
         <div class="mt-4">
           <a href="research.html" class="btn btn-outline">&larr; 研究一覧に戻る</a>
         </div>

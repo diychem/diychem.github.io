@@ -3,10 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DIY Chem. | 新規有機無機ハイブリッド材料の合成ルート開拓</title>
+  <title>DIY Chem. | 混合原子価酸化物の合成方法の検討</title>
   <meta name="description" content="材料化学の在野研究者によるDIY Chem.の研究成果・メモ・リンク集">
   <link rel="canonical" href="https://diychem.jp/research-article-1.html">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF80B3JYTM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SF80B3JYTM');
+  </script>
 </head>
 <body>
   <header class="mobile-header">
@@ -26,30 +35,30 @@
         <h1>DIY <span>Chem.</span></h1>
         <p>Research & Archives</p>
       </div>
-      <nav class="nav-menu">
+            <nav class="nav-menu">
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html" class="nav-link">ホーム / Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">私たち / About Us</a></li>
           <li class="nav-item">
             <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-research">
-              <li><a href="research.html" class="nav-link">研究一覧</a></li>
-              <li><a href="research.html?tag=Synthesis" class="nav-link">設計と合成</a></li>
-              <li><a href="research.html?tag=Database" class="nav-link">データベース</a></li>
-              <li><a href="research.html?tag=Methodology" class="nav-link">新しい手法</a></li>
+              <li><a href="research-article-1.html" class="nav-link">混合原子価酸化物の合成方法の検討</a></li>
+              <li><a href="research-article-2.html" class="nav-link">Al-Fe-Cu準結晶を形成する組成の調査</a></li>
+              <li><a href="research-article-3.html" class="nav-link">無機材料データベースからの新規構造探索</a></li>
+              <li><a href="research-article-4.html" class="nav-link">機械学習を用いた相図の予測手法</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-memo">
-              <li><a href="memo.html" class="nav-link">メモ一覧</a></li>
-              <li><a href="memo.html?tag=DIY" class="nav-link">器具の自作</a></li>
-              <li><a href="memo.html?tag=Scripting" class="nav-link">スクリプト</a></li>
-              <li><a href="memo.html?tag=Workflow" class="nav-link">ワークフロー</a></li>
-              <li><a href="memo.html?tag=Management" class="nav-link">試薬・管理</a></li>
+              <li><a href="memo-article-1.html" class="nav-link">ヤフーオークションの活用</a></li>
+              <li><a href="memo-article-2.html" class="nav-link">配位数に依存しないイオン半径の検討</a></li>
+              <li><a href="memo-article-3.html" class="nav-link">XRD測定時間短縮の検討</a></li>
+              <li><a href="memo-article-4.html" class="nav-link">データベースの活用</a></li>
             </ul>
           </li>
           <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
+          <li class="nav-item"><a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a></li>
         </ul>
       </nav>
     </aside>
@@ -57,15 +66,18 @@
     <main class="main-content">
       <div class="page-header mb-4">
         <span class="card-tag">Synthesis</span>
-        <h1 style="margin-top:0.5rem; border:none; padding:0;">新規有機無機ハイブリッド材料の合成ルート開拓</h1>
+        <h1 style="margin-top:0.5rem; border:none; padding:0;">混合原子価酸化物の合成方法の検討</h1>
         <p>2026.05.01</p>
       </div>
       <div class="article-content" style="max-width: 800px;">
-        <p>安価な原料を用いた、環境負荷の少ない新しい合成プロセスの検討と初期のキャラクタリゼーション結果を報告します。</p>
         <h2>背景</h2>
-        <p>従来の合成法では高価な触媒が必要でしたが、本研究では一般的な試薬を組み合わせることでコストを抑えたルートを模索しました。</p>
-        <h2>実験結果</h2>
-        <p>反応温度と時間を最適化することで、収率が大幅に向上することが確認できました。今後はXRD等の外部測定も検討予定です。</p>
+        <p>混合原子価酸化物はその電子状態から種々の物性が期待できるが、大気中での焼成では最大の安定な価数まで酸化されてしまうことが多く、合成することが困難である。</p>
+        <h2>結論</h2>
+        <p>酸化物とTiを同封して真空引きした後に加熱することで、Tiよりも還元されやすいFeなどの金属元素を混合原子価の状態で含む酸化物が得られた。</p>
+        <h2>補足</h2>
+        <p>H2等の能動的な還元剤で価数を調整しようとすると金属状態まで還元されてしまいやすいため、混合原子価の状態にしたい金属元素よりも酸化されやすい金属をゲッターとして用いることが有効である。</p>
+        <h2>引用文献</h2>
+        <p>[1] XXXX<br>[2] XXXX<br>[3] XXXX</p>
         <div class="mt-4">
           <a href="research.html" class="btn btn-outline">&larr; 研究一覧に戻る</a>
         </div>

@@ -9,6 +9,15 @@ const head = (title) => `<!DOCTYPE html>
   <title>T. Lab | ${title}</title>
   <meta name="description" content="個人研究、メモ、リンクを整理する学術・研究サイト">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF80B3JYTM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SF80B3JYTM');
+  </script>
 </head>
 <body>`;
 
@@ -46,11 +55,10 @@ const headerAndSidebar = `  <!-- Mobile Header -->
               <span class="toggle-icon">▼</span>
             </a>
             <ul class="sub-menu" id="submenu-research">
-              <li><a href="research.html" class="nav-link">研究一覧</a></li>
-              <li><a href="research.html?tag=Algorithm" class="nav-link">アルゴリズム</a></li>
-              <li><a href="research.html?tag=Data Science" class="nav-link">データサイエンス</a></li>
-              <li><a href="research.html?tag=HCI" class="nav-link">HCI</a></li>
-              <li><a href="research.html?tag=Systems" class="nav-link">システム</a></li>
+              <li><a href="research-article-1.html" class="nav-link">グラフ探索アルゴリズムの比較</a></li>
+              <li><a href="research-article-2.html" class="nav-link">時系列データの異常検知手法</a></li>
+              <li><a href="research-article-3.html" class="nav-link">認知負荷を低減するUI設計</a></li>
+              <li><a href="research-article-4.html" class="nav-link">分散処理フレームワークの評価</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -59,15 +67,17 @@ const headerAndSidebar = `  <!-- Mobile Header -->
               <span class="toggle-icon">▼</span>
             </a>
             <ul class="sub-menu" id="submenu-memo">
-              <li><a href="memo.html" class="nav-link">メモ一覧</a></li>
-              <li><a href="memo.html?tag=Setup" class="nav-link">環境構築</a></li>
-              <li><a href="memo.html?tag=CSS" class="nav-link">CSS / UI</a></li>
-              <li><a href="memo.html?tag=Git" class="nav-link">Git / 開発手順</a></li>
-              <li><a href="memo.html?tag=Tool" class="nav-link">ツール</a></li>
+              <li><a href="memo-article-1.html" class="nav-link">WSL2でのDocker環境構築</a></li>
+              <li><a href="memo-article-2.html" class="nav-link">CSS Gridの便利なスニペット</a></li>
+              <li><a href="memo-article-3.html" class="nav-link">Git rebaseのコンフリクト解消</a></li>
+              <li><a href="memo-article-4.html" class="nav-link">おすすめのターミナルツール</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a href="links.html" class="nav-link">リンク / Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a>
           </li>
         </ul>
       </nav>
@@ -91,7 +101,7 @@ const pages = {
         <p>このサイトは、日々の研究記録、技術的な考察メモ、および有用なリソースを整理するための個人的なアーカイブです。研究者やエンジニアにとって直感的にアクセスできる構成を目指しています。</p>
         <div class="flex-row-gap mt-4">
           <a href="research.html" class="btn btn-primary">研究を見る</a>
-          <a href="memo.html" class="btn btn-outline">メモを読む</a>
+          <a href="memo.html" class="btn btn-memo">メモを読む</a>
         </div>
       </section>
 
@@ -247,6 +257,21 @@ const pages = {
         <div class="mt-4">
           <a href="index.html" class="btn btn-primary">ホームに戻る</a>
         </div>
+      </div>`
+  },
+  'privacy.html': {
+    title: 'Privacy Policy',
+    content: `
+      <div class="page-header mb-4 bg-about">
+        <h1>プライバシーポリシー / Privacy</h1>
+      </div>
+      <div class="article-content" style="max-width: 800px;">
+        <p>当サイトでは、アクセス解析のためにGoogle Analyticsを使用しています。</p>
+        <p>Google Analyticsは、トラフィックデータ収集のためにCookieを使用しています。<br>
+        このデータは匿名で収集されており、個人を特定するものではありません。</p>
+        <p>この機能はCookieを無効にすることで収集を拒否することができます。<br>
+        お使いのブラウザの設定をご確認ください。</p>
+        <p>この規約に関して、詳しくは<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Googleのポリシー</a>をご確認ください。</p>
       </div>`
   },
   'research-article-1.html': {
