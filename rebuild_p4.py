@@ -45,12 +45,11 @@ def nav():
               <li><a href="memo.html?tag=Column" class="nav-link">コラム / Column</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
           <li class="nav-item"><a href="document.html" class="nav-link">資料 / Document</a></li>
+          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
           <li class="nav-item"><a href="database.html" class="nav-link">データ / Database</a></li>
           <li class="nav-item"><a href="equipment.html" class="nav-link">設備 / Equipment</a></li>
           <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
-          <li class="nav-item"><a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a></li>
         </ul>
       </nav>
     </aside>
@@ -83,7 +82,9 @@ def write(filename, title, canonical, body):
     print(f"Written: {filename}")
 
 write("database-article-1.html", "無機材料 結晶構造データセット", "database-article-1.html", """      <div class="page-header mb-4">
-        <span class="card-tag">Data</span>
+        <div class="tags-container">
+          <span class="card-tag data">Data</span>
+        </div>
         <h1 style="margin-top:0.5rem;border:none;padding:0;">無機材料 結晶構造データセット</h1>
         <p>2026.05.09</p>
       </div>
@@ -93,7 +94,9 @@ write("database-article-1.html", "無機材料 結晶構造データセット", 
       </div>""")
 
 write("tool-article-1.html", "画像の背景除去", "tool-article-1.html", """      <div class="page-header mb-4">
-        <span class="card-tag memo">App</span>
+        <div class="tags-container">
+          <span class="card-tag memo">App</span>
+        </div>
         <h1 style="margin-top:0.5rem;border:none;padding:0;">画像の背景除去</h1>
       </div>
       <div class="article-content" style="max-width:800px;">
@@ -102,7 +105,9 @@ write("tool-article-1.html", "画像の背景除去", "tool-article-1.html", """
       </div>""")
 
 write("tool-article-2.html", "スペクトルのバックグラウンド分離", "tool-article-2.html", """      <div class="page-header mb-4">
-        <span class="card-tag memo">App</span>
+        <div class="tags-container">
+          <span class="card-tag memo">App</span>
+        </div>
         <h1 style="margin-top:0.5rem;border:none;padding:0;">スペクトルのバックグラウンド分離</h1>
       </div>
       <div class="article-content" style="max-width:800px;">

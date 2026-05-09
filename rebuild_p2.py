@@ -45,12 +45,11 @@ def nav():
               <li><a href="memo.html?tag=Column" class="nav-link">コラム / Column</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
           <li class="nav-item"><a href="document.html" class="nav-link">資料 / Document</a></li>
+          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
           <li class="nav-item"><a href="database.html" class="nav-link">データ / Database</a></li>
           <li class="nav-item"><a href="equipment.html" class="nav-link">設備 / Equipment</a></li>
           <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
-          <li class="nav-item"><a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a></li>
         </ul>
       </nav>
     </aside>
@@ -84,7 +83,9 @@ def write(filename, title, canonical, body):
 
 # Research articles
 write("research-article-1.html", "混合原子価酸化物の合成方法の検討", "research-article-1.html", """      <div class="page-header mb-4">
-        <span class="card-tag">Synthesis</span>
+        <div class="tags-container">
+          <span class="card-tag">Synthesis</span>
+        </div>
         <h1 style="margin-top:0.5rem;border:none;padding:0;">混合原子価酸化物の合成方法の検討</h1>
         <p>2026.03.31</p>
       </div>
@@ -101,7 +102,9 @@ write("research-article-1.html", "混合原子価酸化物の合成方法の検�
       </div>""")
 
 write("research-article-2.html", "Al-Fe-Cu準結晶を形成する組成の調査", "research-article-2.html", """      <div class="page-header mb-4">
-        <span class="card-tag">Synthesis</span>
+        <div class="tags-container">
+          <span class="card-tag">Synthesis</span>
+        </div>
         <h1 style="margin-top:0.5rem;border:none;padding:0;">Al-Fe-Cu準結晶を形成する組成の調査</h1>
         <p>2026.04.10</p>
       </div>
@@ -116,7 +119,9 @@ write("research-article-2.html", "Al-Fe-Cu準結晶を形成する組成の調�
       </div>""")
 
 write("research-article-3.html", "無機材料データベースからの新規構造探索", "research-article-3.html", """      <div class="page-header mb-4">
-        <span class="card-tag">Database</span>
+        <div class="tags-container">
+          <span class="card-tag">Database</span>
+        </div>
         <h1 style="margin-top:0.5rem;border:none;padding:0;">無機材料データベースからの新規構造探索</h1>
         <p>2026.04.29</p>
       </div>
@@ -131,7 +136,9 @@ write("research-article-3.html", "無機材料データベースからの新規�
       </div>""")
 
 write("research-article-4.html", "機械学習を用いた相図の予測手法", "research-article-4.html", """      <div class="page-header mb-4">
-        <span class="card-tag">Methodology</span>
+        <div class="tags-container">
+          <span class="card-tag">Methodology</span>
+        </div>
         <h1 style="margin-top:0.5rem;border:none;padding:0;">機械学習を用いた相図の予測手法</h1>
         <p>2026.05.02</p>
       </div>

@@ -52,12 +52,11 @@
               <li><a href="memo.html?tag=Column" class="nav-link">コラム / Column</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
           <li class="nav-item"><a href="document.html" class="nav-link">資料 / Document</a></li>
+          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
           <li class="nav-item"><a href="database.html" class="nav-link">データ / Database</a></li>
           <li class="nav-item"><a href="equipment.html" class="nav-link">設備 / Equipment</a></li>
           <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
-          <li class="nav-item"><a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a></li>
         </ul>
       </nav>
     </aside>
@@ -68,7 +67,9 @@
       </div>
       <div class="card-grid" id="card-container">
         <article class="card" data-tag="Program">
-          <span class="card-tag memo">Program</span>
+          <div class="tags-container">
+            <span class="card-tag memo">Program</span>
+          </div>
           <h3>データベースの活用</h3>
           <p>データベースからAPIやスクリプトを用いて情報を抽出し、解析するプログラム。</p>
           <div class="card-footer">
@@ -77,8 +78,10 @@
           </div>
         </article>
         <article class="card" data-tag="Program,DIY">
-          <span class="card-tag memo">DIY</span>
-          <span class="card-tag memo">Program</span>
+          <div class="tags-container">
+            <span class="card-tag memo">DIY</span>
+            <span class="card-tag memo">Program</span>
+          </div>
           <h3>XRD測定時間短縮の検討</h3>
           <p>BEADSなどのソフトウェアを利用することで、測定時間を短縮してもノイズを処理し相同定を行う。</p>
           <div class="card-footer">
@@ -87,7 +90,9 @@
           </div>
         </article>
         <article class="card" data-tag="Column">
-          <span class="card-tag memo">Column</span>
+          <div class="tags-container">
+            <span class="card-tag memo">Column</span>
+          </div>
           <h3>配位数に依存しないイオン半径の検討</h3>
           <p>配位数の情報を除いたイオンの種類のみから、凡そのイオン半径を一意に決めてしまおうという試み。</p>
           <div class="card-footer">
@@ -96,7 +101,9 @@
           </div>
         </article>
         <article class="card" data-tag="DIY">
-          <span class="card-tag memo">DIY</span>
+          <div class="tags-container">
+            <span class="card-tag memo">DIY</span>
+          </div>
           <h3>ヤフーオークションの活用</h3>
           <p>中古の装置や部品を揃えるのがおすすめです。</p>
           <div class="card-footer">

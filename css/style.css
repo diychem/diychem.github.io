@@ -276,7 +276,11 @@ p { margin-bottom: 1rem; }
 .page-header.bg-about,
 .page-header.bg-research,
 .page-header.bg-memo,
-.page-header.bg-link {
+.page-header.bg-link,
+.page-header.bg-tool,
+.page-header.bg-document,
+.page-header.bg-database,
+.page-header.bg-equipment {
   background-size: cover;
   background-position: center;
   padding: 3rem;
@@ -285,7 +289,11 @@ p { margin-bottom: 1rem; }
 .page-header.bg-about h1,
 .page-header.bg-research h1,
 .page-header.bg-memo h1,
-.page-header.bg-link h1 {
+.page-header.bg-link h1,
+.page-header.bg-tool h1,
+.page-header.bg-document h1,
+.page-header.bg-database h1,
+.page-header.bg-equipment h1 {
   color: #FFFFFF;
   margin: 0;
   border: none;
@@ -293,12 +301,17 @@ p { margin-bottom: 1rem; }
 .page-header.bg-about p,
 .page-header.bg-research p,
 .page-header.bg-memo p,
-.page-header.bg-link p {
+.page-header.bg-link p,
+.page-header.bg-tool p,
+.page-header.bg-document p,
+.page-header.bg-database p,
+.page-header.bg-equipment p {
   color: rgba(255, 255, 255, 0.9);
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
 
+/* Blue-green group (#40BFBF): Home, About Us, Research */
 .page-header.bg-about {
   background-image: linear-gradient(135deg, rgba(32, 32, 32, 0.85) 0%, rgba(32, 32, 32, 0.95) 100%), url('../images/about-bg.png');
   border-left: 6px solid var(--accent-color);
@@ -307,12 +320,32 @@ p { margin-bottom: 1rem; }
   background-image: linear-gradient(135deg, rgba(32, 32, 32, 0.85) 0%, rgba(32, 32, 32, 0.95) 100%), url('../images/research-bg.png');
   border-left: 6px solid var(--accent-color);
 }
+
+/* Red group (#FF9F7F): Memo, Document, Tool */
 .page-header.bg-memo {
   background-image: linear-gradient(135deg, rgba(32, 32, 32, 0.85) 0%, rgba(32, 32, 32, 0.95) 100%), url('../images/memo-bg.png');
   border-left: 6px solid var(--accent-strong);
 }
+.page-header.bg-document {
+  background-image: linear-gradient(135deg, rgba(32, 32, 32, 0.85) 0%, rgba(32, 32, 32, 0.95) 100%);
+  border-left: 6px solid var(--accent-strong);
+}
+.page-header.bg-tool {
+  background-image: linear-gradient(135deg, rgba(32, 32, 32, 0.85) 0%, rgba(32, 32, 32, 0.95) 100%);
+  border-left: 6px solid var(--accent-strong);
+}
+
+/* Yellow group (#BFBF7F): Database, Equipment, Link */
 .page-header.bg-link {
   background-image: linear-gradient(135deg, rgba(32, 32, 32, 0.85) 0%, rgba(32, 32, 32, 0.95) 100%), url('../images/link-bg.png');
+  border-left: 6px solid var(--aux-color);
+}
+.page-header.bg-database {
+  background-image: linear-gradient(135deg, rgba(32, 32, 32, 0.85) 0%, rgba(32, 32, 32, 0.95) 100%);
+  border-left: 6px solid var(--aux-color);
+}
+.page-header.bg-equipment {
+  background-image: linear-gradient(135deg, rgba(32, 32, 32, 0.85) 0%, rgba(32, 32, 32, 0.95) 100%);
   border-left: 6px solid var(--aux-color);
 }
 
@@ -352,6 +385,13 @@ p { margin-bottom: 1rem; }
   border-color: var(--accent-color);
 }
 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 .card-tag {
   display: inline-block;
   font-size: 0.75rem;
@@ -360,12 +400,15 @@ p { margin-bottom: 1rem; }
   border-radius: 999px;
   background-color: rgba(64, 191, 191, 0.15);
   color: var(--accent-color-dark);
-  margin-bottom: 1rem;
   width: fit-content;
 }
 .card-tag.memo {
   background-color: rgba(255, 159, 127, 0.15);
   color: var(--accent-strong-dark);
+}
+.card-tag.data {
+  background-color: rgba(191, 191, 127, 0.15);
+  color: var(--aux-color-dark);
 }
 
 .card h3 {

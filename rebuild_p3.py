@@ -45,12 +45,11 @@ def nav():
               <li><a href="memo.html?tag=Column" class="nav-link">コラム / Column</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
           <li class="nav-item"><a href="document.html" class="nav-link">資料 / Document</a></li>
+          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
           <li class="nav-item"><a href="database.html" class="nav-link">データ / Database</a></li>
           <li class="nav-item"><a href="equipment.html" class="nav-link">設備 / Equipment</a></li>
           <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
-          <li class="nav-item"><a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a></li>
         </ul>
       </nav>
     </aside>
@@ -84,7 +83,9 @@ def write(filename, title, canonical, body):
 
 # Memo articles
 write("memo-article-1.html", "ヤフーオークションの活用", "memo-article-1.html", """      <div class="page-header mb-4">
-        <span class="card-tag memo">DIY</span>
+        <div class="tags-container">
+          <span class="card-tag memo">DIY</span>
+        </div>
         <h1 style="margin-top:0.5rem;border:none;padding:0;">ヤフーオークションの活用</h1>
         <p>2026.04.03</p>
       </div>
@@ -95,7 +96,9 @@ write("memo-article-1.html", "ヤフーオークションの活用", "memo-artic
       </div>""")
 
 write("memo-article-2.html", "配位数に依存しないイオン半径の検討", "memo-article-2.html", """      <div class="page-header mb-4">
-        <span class="card-tag memo">Column</span>
+        <div class="tags-container">
+          <span class="card-tag memo">Column</span>
+        </div>
         <h1 style="margin-top:0.5rem;border:none;padding:0;">配位数に依存しないイオン半径の検討</h1>
         <p>2026.04.12</p>
       </div>
@@ -106,8 +109,10 @@ write("memo-article-2.html", "配位数に依存しないイオン半径の検�
       </div>""")
 
 write("memo-article-3.html", "XRD測定時間短縮の検討", "memo-article-3.html", """      <div class="page-header mb-4">
-        <span class="card-tag memo">DIY</span>
-        <span class="card-tag memo">Program</span>
+        <div class="tags-container">
+          <span class="card-tag memo">DIY</span>
+          <span class="card-tag memo">Program</span>
+        </div>
         <h1 style="margin-top:0.5rem;border:none;padding:0;">XRD測定時間短縮の検討</h1>
         <p>2026.04.22</p>
       </div>
@@ -118,7 +123,9 @@ write("memo-article-3.html", "XRD測定時間短縮の検討", "memo-article-3.h
       </div>""")
 
 write("memo-article-4.html", "データベースの活用", "memo-article-4.html", """      <div class="page-header mb-4">
-        <span class="card-tag memo">Program</span>
+        <div class="tags-container">
+          <span class="card-tag memo">Program</span>
+        </div>
         <h1 style="margin-top:0.5rem;border:none;padding:0;">データベースの活用</h1>
         <p>2026.04.26</p>
       </div>
@@ -149,13 +156,15 @@ write("privacy.html", "Privacy Policy", "privacy.html", """      <div class="pag
         <p>この規約に関して、詳しくは<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Googleのポリシー</a>をご確認ください。</p>
       </div>""")
 
-write("tool.html", "Tool", "tool.html", """      <div class="page-header mb-4" style="background-image:linear-gradient(135deg,rgba(32,32,32,0.85) 0%,rgba(32,32,32,0.95) 100%);border-left:6px solid var(--accent-strong);padding:3rem;border-radius:12px;">
-        <h1 style="color:#fff;border:none;">ツール / Tool</h1>
-        <p style="color:rgba(255,255,255,0.9);margin-top:0.5rem;">データ解析等に使うアプリの置き場</p>
+write("tool.html", "Tool", "tool.html", """      <div class="page-header mb-4 bg-tool">
+        <h1>ツール / Tool</h1>
+        <p>データ解析等に使うアプリの置き場</p>
       </div>
       <div class="card-grid">
         <article class="card">
+        <div class="tags-container">
           <span class="card-tag memo">App</span>
+        </div>
           <h3>画像の背景除去</h3>
           <p>実験器具やサンプルの写真から背景を自動で取り除くツール。</p>
           <div class="card-footer">
@@ -164,7 +173,9 @@ write("tool.html", "Tool", "tool.html", """      <div class="page-header mb-4" s
           </div>
         </article>
         <article class="card">
+        <div class="tags-container">
           <span class="card-tag memo">App</span>
+        </div>
           <h3>スペクトルのバックグラウンド分離</h3>
           <p>XRDやXPSなどのスペクトルデータからバックグラウンド成分を分離するツール。</p>
           <div class="card-footer">
@@ -174,13 +185,15 @@ write("tool.html", "Tool", "tool.html", """      <div class="page-header mb-4" s
         </article>
       </div>""")
 
-write("document.html", "Document", "document.html", """      <div class="page-header mb-4" style="background-image:linear-gradient(135deg,rgba(32,32,32,0.85) 0%,rgba(32,32,32,0.95) 100%);border-left:6px solid var(--aux-color);padding:3rem;border-radius:12px;">
-        <h1 style="color:#fff;border:none;">資料 / Document</h1>
-        <p style="color:rgba(255,255,255,0.9);margin-top:0.5rem;">プレゼン資料(PDF)の置き場</p>
+write("document.html", "Document", "document.html", """      <div class="page-header mb-4 bg-document">
+        <h1>資料 / Document</h1>
+        <p>プレゼン資料(PDF)の置き場</p>
       </div>
       <div class="card-grid">
         <article class="card">
-          <span class="card-tag">PDF</span>
+        <div class="tags-container">
+          <span class="card-tag memo">PDF</span>
+        </div>
           <h3>2026年 学会発表スライド</h3>
           <p>混合原子価酸化物の合成と特性評価に関する発表資料です。</p>
           <div class="card-footer">
@@ -190,13 +203,15 @@ write("document.html", "Document", "document.html", """      <div class="page-he
         </article>
       </div>""")
 
-write("database.html", "Database", "database.html", """      <div class="page-header mb-4" style="background-image:linear-gradient(135deg,rgba(32,32,32,0.85) 0%,rgba(32,32,32,0.95) 100%);border-left:6px solid var(--accent-color);padding:3rem;border-radius:12px;">
-        <h1 style="color:#fff;border:none;">データ / Database</h1>
-        <p style="color:rgba(255,255,255,0.9);margin-top:0.5rem;">収集・整理したデータの置き場</p>
+write("database.html", "Database", "database.html", """      <div class="page-header mb-4 bg-database">
+        <h1>データ / Database</h1>
+        <p>収集・整理したデータの置き場</p>
       </div>
       <div class="card-grid">
         <article class="card">
-          <span class="card-tag">Data</span>
+        <div class="tags-container">
+          <span class="card-tag data">Data</span>
+        </div>
           <h3>無機材料 結晶構造データセット</h3>
           <p>過去に合成した試料のXRDパターンとリートベルト解析結果のまとめ。</p>
           <div class="card-footer">
@@ -226,9 +241,9 @@ for name, desc in equipments:
           <p>{desc}</p>
         </article>"""
 
-write("equipment.html", "Equipment", "equipment.html", f"""      <div class="page-header mb-4" style="background-image:linear-gradient(135deg,rgba(32,32,32,0.85) 0%,rgba(32,32,32,0.95) 100%);border-left:6px solid var(--aux-color-dark);padding:3rem;border-radius:12px;">
-        <h1 style="color:#fff;border:none;">設備 / Equipment</h1>
-        <p style="color:rgba(255,255,255,0.9);margin-top:0.5rem;">保有している装置の紹介</p>
+write("equipment.html", "Equipment", "equipment.html", f"""      <div class="page-header mb-4 bg-equipment">
+        <h1 style="border:none;">設備 / Equipment</h1>
+        <p>保有している装置の紹介</p>
       </div>
       <div class="card-grid">{eq_cards}
       </div>""")

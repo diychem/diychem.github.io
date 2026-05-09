@@ -45,12 +45,11 @@ def nav(page=""):
               <li><a href="memo.html?tag=Column" class="nav-link">コラム / Column</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
           <li class="nav-item"><a href="document.html" class="nav-link">資料 / Document</a></li>
+          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
           <li class="nav-item"><a href="database.html" class="nav-link">データ / Database</a></li>
           <li class="nav-item"><a href="equipment.html" class="nav-link">設備 / Equipment</a></li>
           <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
-          <li class="nav-item"><a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a></li>
         </ul>
       </nav>
     </aside>
@@ -94,22 +93,26 @@ write("index.html", "Home", "", """      <section class="hero bg-home">
       <section>
         <h2>最新の活動 / Latest Updates</h2>
         <div class="card-grid">
-          <article class="card" data-tag="Synthesis">
+          <article class="card" data-tag="Methodology">
+          <div class="tags-container">
             <span class="card-tag">Research</span>
-            <h3>混合原子価酸化物の合成方法の検討</h3>
-            <p>酸化物とTiを同封して真空引きした後に加熱することで、混合原子価の状態で含む酸化物が得られた。</p>
+          </div>
+            <h3>機械学習を用いた相図の予測手法</h3>
+            <p>既知の相図データを学習データとして、未探索の合金系の相図を予測する手法を提案した。</p>
             <div class="card-footer">
-              <time datetime="2026-03-31">2026.03.31</time>
-              <a href="research-article-1.html" style="font-weight:600;">詳細へ &rarr;</a>
+              <time datetime="2026-05-02">2026.05.02</time>
+              <a href="research-article-4.html" style="font-weight:600;">詳細へ &rarr;</a>
             </div>
           </article>
-          <article class="card" data-tag="DIY">
+          <article class="card" data-tag="Program">
+          <div class="tags-container">
             <span class="card-tag memo">Memo</span>
-            <h3>ヤフーオークションの活用</h3>
-            <p>新品で実験装置を買うのは非常に高価なため、ヤフーオークションを活用して中古の装置や部品を揃えるのがおすすめです。</p>
+          </div>
+            <h3>データベースの活用</h3>
+            <p>データベースからAPIやスクリプトを用いて情報を抽出し、解析するプログラム。</p>
             <div class="card-footer">
-              <time datetime="2026-04-03">2026.04.03</time>
-              <a href="memo-article-1.html" style="font-weight:600;">詳細へ &rarr;</a>
+              <time datetime="2026-04-26">2026.04.26</time>
+              <a href="memo-article-4.html" style="font-weight:600;">詳細へ &rarr;</a>
             </div>
           </article>
         </div>
@@ -128,12 +131,22 @@ write("about.html", "About Us", "about.html", """      <div class="page-header m
       <section class="mb-4">
         <h2>研究テーマ</h2>
         <ul>
-          <li class="mb-2"><strong>① 物質の合成</strong>: 安価で入手しやすい原料から、新規な機能性材料（有機無機ハイブリッドなど）を設計・合成する手法の開拓。</li>
-          <li class="mb-2"><strong>② データベースの作成と分析</strong>: オープンデータを活用した物性予測や、自身で測定した実験データの体系的なデータベース化と機械学習の適用。</li>
-          <li class="mb-2"><strong>③ 新しい研究手法の提案</strong>: 3Dプリンタやマイコンを活用した自作の実験装置や、安価なセンサーを用いた簡易的な測定・分析手法の構築。</li>
+          <li class="mb-2"><strong>物質の合成</strong>: 安価で入手しやすい原料から、新規な機能性材料（有機無機ハイブリッドなど）を設計・合成する手法の開拓。</li>
+          <li class="mb-2"><strong>データベースの作成と分析</strong>: オープンデータを活用した物性予測や、自身で測定した実験データの体系的なデータベース化と機械学習の適用。</li>
+          <li class="mb-2"><strong>新しい研究手法の提案</strong>: 3Dプリンタやマイコンを活用した自作の実験装置や、安価なセンサーを用いた簡易的な測定・分析手法の構築。</li>
         </ul>
       </section>
-      <p style="color:var(--accent-strong-dark);font-weight:bold;margin-top:2rem;padding:1rem;background:rgba(255,159,127,0.1);border-left:4px solid var(--accent-strong);">このサイトのコンテンツに対して、著作権は放棄しておらず、引用する際は出典を明記するようにお願いします。</p>""")
+      <section class="mb-4">
+        <h2>著作権</h2>
+        <p>このサイトのコンテンツに対して、著作権は放棄しておらず、引用する際は出典を明記するようにお願いします。</p>
+      </section>
+      <section class="mb-4">
+        <h2>プライバシーポリシー</h2>
+        <p>当サイトでは、アクセス解析のためにGoogle Analyticsを使用しています。</p>
+        <p>Google Analyticsは、トラフィックデータ収集のためにCookieを使用しています。<br>このデータは匿名で収集されており、個人を特定するものではありません。</p>
+        <p>この機能はCookieを無効にすることで収集を拒否することができます。<br>お使いのブラウザの設定をご確認ください。</p>
+        <p>この規約に関して、詳しくは<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Googleのポリシー</a>をご確認ください。</p>
+      </section>""")
 
 # ---- research.html ----
 write("research.html", "Research", "research.html", """      <div class="page-header mb-4 bg-research">
@@ -142,7 +155,9 @@ write("research.html", "Research", "research.html", """      <div class="page-he
       </div>
       <div class="card-grid" id="card-container">
         <article class="card" data-tag="Methodology">
-          <span class="card-tag">Methodology</span>
+          <div class="tags-container">
+            <span class="card-tag">Methodology</span>
+          </div>
           <h3>機械学習を用いた相図の予測手法</h3>
           <p>既知の相図データを学習データとして、未探索の合金系の相図を予測する手法を提案した。</p>
           <div class="card-footer">
@@ -151,7 +166,9 @@ write("research.html", "Research", "research.html", """      <div class="page-he
           </div>
         </article>
         <article class="card" data-tag="Database">
-          <span class="card-tag">Database</span>
+          <div class="tags-container">
+            <span class="card-tag">Database</span>
+          </div>
           <h3>無機材料データベースからの新規構造探索</h3>
           <p>特定の配位環境と電子状態を持つ物質群を抽出するスクリーニング手法を構築した。</p>
           <div class="card-footer">
@@ -160,7 +177,9 @@ write("research.html", "Research", "research.html", """      <div class="page-he
           </div>
         </article>
         <article class="card" data-tag="Synthesis">
-          <span class="card-tag">Synthesis</span>
+          <div class="tags-container">
+            <span class="card-tag">Synthesis</span>
+          </div>
           <h3>Al-Fe-Cu準結晶を形成する組成の調査</h3>
           <p>各種金属原料を混合・加熱し、粉砕・混合・再加熱を繰り返すことで、i相が得られた。</p>
           <div class="card-footer">
@@ -169,7 +188,9 @@ write("research.html", "Research", "research.html", """      <div class="page-he
           </div>
         </article>
         <article class="card" data-tag="Synthesis">
-          <span class="card-tag">Synthesis</span>
+          <div class="tags-container">
+            <span class="card-tag">Synthesis</span>
+          </div>
           <h3>混合原子価酸化物の合成方法の検討</h3>
           <p>酸化物とTiを同封して真空引きした後に加熱することで、混合原子価の状態で含む酸化物が得られた。</p>
           <div class="card-footer">
@@ -187,7 +208,9 @@ write("memo.html", "Memo", "memo.html", """      <div class="page-header mb-4 bg
       </div>
       <div class="card-grid" id="card-container">
         <article class="card" data-tag="Program">
-          <span class="card-tag memo">Program</span>
+          <div class="tags-container">
+            <span class="card-tag memo">Program</span>
+          </div>
           <h3>データベースの活用</h3>
           <p>データベースからAPIやスクリプトを用いて情報を抽出し、解析するプログラム。</p>
           <div class="card-footer">
@@ -196,8 +219,10 @@ write("memo.html", "Memo", "memo.html", """      <div class="page-header mb-4 bg
           </div>
         </article>
         <article class="card" data-tag="Program,DIY">
-          <span class="card-tag memo">DIY</span>
-          <span class="card-tag memo">Program</span>
+          <div class="tags-container">
+            <span class="card-tag memo">DIY</span>
+            <span class="card-tag memo">Program</span>
+          </div>
           <h3>XRD測定時間短縮の検討</h3>
           <p>BEADSなどのソフトウェアを利用することで、測定時間を短縮してもノイズを処理し相同定を行う。</p>
           <div class="card-footer">
@@ -206,7 +231,9 @@ write("memo.html", "Memo", "memo.html", """      <div class="page-header mb-4 bg
           </div>
         </article>
         <article class="card" data-tag="Column">
-          <span class="card-tag memo">Column</span>
+          <div class="tags-container">
+            <span class="card-tag memo">Column</span>
+          </div>
           <h3>配位数に依存しないイオン半径の検討</h3>
           <p>配位数の情報を除いたイオンの種類のみから、凡そのイオン半径を一意に決めてしまおうという試み。</p>
           <div class="card-footer">
@@ -215,7 +242,9 @@ write("memo.html", "Memo", "memo.html", """      <div class="page-header mb-4 bg
           </div>
         </article>
         <article class="card" data-tag="DIY">
-          <span class="card-tag memo">DIY</span>
+          <div class="tags-container">
+            <span class="card-tag memo">DIY</span>
+          </div>
           <h3>ヤフーオークションの活用</h3>
           <p>中古の装置や部品を揃えるのがおすすめです。</p>
           <div class="card-footer">
