@@ -13,7 +13,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-SF80B3JYTM');
   </script>
 </head>
@@ -26,92 +25,87 @@
       <span class="hamburger-line"></span>
     </button>
   </header>
-
   <div class="overlay" id="overlay"></div>
-
   <div class="app-container">
     <aside class="sidebar" id="sidebar">
       <div class="site-brand">
         <h1>DIY <span>Chem.</span></h1>
-        <p>Research & Archives</p>
+        <p>Research &amp; Archives</p>
       </div>
-            <nav class="nav-menu">
+      <nav class="nav-menu">
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html" class="nav-link">ホーム / Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">私たち / About Us</a></li>
           <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
+            <a href="research.html" class="nav-link nav-parent" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-research">
-              <li><a href="research-article-1.html" class="nav-link">混合原子価酸化物の合成方法の検討</a></li>
-              <li><a href="research-article-2.html" class="nav-link">Al-Fe-Cu準結晶を形成する組成の調査</a></li>
-              <li><a href="research-article-3.html" class="nav-link">無機材料データベースからの新規構造探索</a></li>
-              <li><a href="research-article-4.html" class="nav-link">機械学習を用いた相図の予測手法</a></li>
+              <li><a href="research.html?tag=Synthesis" class="nav-link">物質の合成 / Synthesis</a></li>
+              <li><a href="research.html?tag=Database" class="nav-link">データベース / Database</a></li>
+              <li><a href="research.html?tag=Methodology" class="nav-link">手法の提案 / Methodology</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
+            <a href="memo.html" class="nav-link nav-parent" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-memo">
-              <li><a href="memo-article-1.html" class="nav-link">ヤフーオークションの活用</a></li>
-              <li><a href="memo-article-2.html" class="nav-link">配位数に依存しないイオン半径の検討</a></li>
-              <li><a href="memo-article-3.html" class="nav-link">XRD測定時間短縮の検討</a></li>
-              <li><a href="memo-article-4.html" class="nav-link">データベースの活用</a></li>
+              <li><a href="memo.html?tag=DIY" class="nav-link">自作 / DIY</a></li>
+              <li><a href="memo.html?tag=Program" class="nav-link">プログラム / Program</a></li>
+              <li><a href="memo.html?tag=Column" class="nav-link">コラム / Column</a></li>
             </ul>
           </li>
+          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
+          <li class="nav-item"><a href="document.html" class="nav-link">資料 / Document</a></li>
+          <li class="nav-item"><a href="database.html" class="nav-link">データ / Database</a></li>
+          <li class="nav-item"><a href="equipment.html" class="nav-link">設備 / Equipment</a></li>
           <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
           <li class="nav-item"><a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a></li>
         </ul>
       </nav>
     </aside>
-
     <main class="main-content">
       <div class="page-header mb-4 bg-memo">
         <h1 id="page-title">メモ / Memo</h1>
         <p>実験自作やデータ処理の備忘録</p>
       </div>
       <div class="card-grid" id="card-container">
-        <!-- Card 1 -->
-        <article class="card" data-tag="DIY">
-          <span class="card-tag memo">DIY</span>
-          <h3>ヤフーオークションの活用</h3>
-          <p>中古の装置や部品を揃えるのがおすすめです。</p>
-          <div class="card-footer">
-            <time datetime="2026-04-28">2026.04.28</time>
-            <a href="memo-article-1.html" style="font-weight:600;">続きを読む &rarr;</a>
-          </div>
-        </article>
-        <!-- Card 2 -->
-        <article class="card" data-tag="Column">
-          <span class="card-tag memo">Column</span>
-          <h3>配位数に依存しないイオン半径の検討</h3>
-          <p>配位数の情報を除いたイオンの種類のみから、凡そのイオン半径を一意に決めてしまおうという試み。</p>
-          <div class="card-footer">
-            <time datetime="2026-04-25">2026.04.25</time>
-            <a href="memo-article-2.html" style="font-weight:600;">続きを読む &rarr;</a>
-          </div>
-        </article>
-        <!-- Card 3 -->
-        <article class="card" data-tag="Program">
-          <span class="card-tag memo">DIY</span>
-          <span class="card-tag memo">Program</span>
-          <h3>XRD測定時間短縮の検討</h3>
-          <p>BEADS等のソフトウェアを利用することで、測定時間を短縮してもノイズを処理し相同定を行う。</p>
-          <div class="card-footer">
-            <time datetime="2026-04-20">2026.04.20</time>
-            <a href="memo-article-3.html" style="font-weight:600;">続きを読む &rarr;</a>
-          </div>
-        </article>
-        <!-- Card 4 -->
         <article class="card" data-tag="Program">
           <span class="card-tag memo">Program</span>
           <h3>データベースの活用</h3>
           <p>データベースからAPIやスクリプトを用いて情報を抽出し、解析するプログラム。</p>
           <div class="card-footer">
-            <time datetime="2026-04-15">2026.04.15</time>
+            <time datetime="2026-04-26">2026.04.26</time>
             <a href="memo-article-4.html" style="font-weight:600;">続きを読む &rarr;</a>
           </div>
         </article>
+        <article class="card" data-tag="Program,DIY">
+          <span class="card-tag memo">DIY</span>
+          <span class="card-tag memo">Program</span>
+          <h3>XRD測定時間短縮の検討</h3>
+          <p>BEADSなどのソフトウェアを利用することで、測定時間を短縮してもノイズを処理し相同定を行う。</p>
+          <div class="card-footer">
+            <time datetime="2026-04-22">2026.04.22</time>
+            <a href="memo-article-3.html" style="font-weight:600;">続きを読む &rarr;</a>
+          </div>
+        </article>
+        <article class="card" data-tag="Column">
+          <span class="card-tag memo">Column</span>
+          <h3>配位数に依存しないイオン半径の検討</h3>
+          <p>配位数の情報を除いたイオンの種類のみから、凡そのイオン半径を一意に決めてしまおうという試み。</p>
+          <div class="card-footer">
+            <time datetime="2026-04-12">2026.04.12</time>
+            <a href="memo-article-2.html" style="font-weight:600;">続きを読む &rarr;</a>
+          </div>
+        </article>
+        <article class="card" data-tag="DIY">
+          <span class="card-tag memo">DIY</span>
+          <h3>ヤフーオークションの活用</h3>
+          <p>中古の装置や部品を揃えるのがおすすめです。</p>
+          <div class="card-footer">
+            <time datetime="2026-04-03">2026.04.03</time>
+            <a href="memo-article-1.html" style="font-weight:600;">続きを読む &rarr;</a>
+          </div>
+        </article>
       </div>
-      <div id="no-cards-msg" style="display:none; margin-top:2rem; color:#666;">該当する記事が見つかりません。</div>
+      <div id="no-cards-msg" style="display:none;margin-top:2rem;color:#666;">該当する記事が見つかりません。</div>
     </main>
   </div>
   <script src="js/script.js"></script>

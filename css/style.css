@@ -155,7 +155,19 @@ p { margin-bottom: 1rem; }
 }
 
 .sub-menu.open {
-  max-height: 300px;
+  max-height: 400px;
+}
+
+/* Nav parent link: text navigates, icon toggles */
+.nav-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-parent .toggle-icon {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  flex-shrink: 0;
 }
 
 .sub-menu .nav-link {

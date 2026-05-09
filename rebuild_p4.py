@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DIY Chem. | Al-Fe-Cu準結晶を形成する組成の調査</title>
-  <meta name="description" content="材料化学の在野研究者によるDIY Chem.の研究成果・メモ・リンク集">
-  <link rel="canonical" href="https://diychem.jp/research-article-2.html">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Google tag (gtag.js) -->
+import os
+
+GA = """  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF80B3JYTM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-SF80B3JYTM');
-  </script>
-</head>
-<body>
-  <header class="mobile-header">
+  </script>"""
+
+def nav():
+    return """  <header class="mobile-header">
     <div class="mobile-brand">DIY <span>Chem.</span></div>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span class="hamburger-line"></span>
@@ -61,23 +54,60 @@
         </ul>
       </nav>
     </aside>
-    <main class="main-content">
-      <div class="page-header mb-4">
-        <span class="card-tag">Synthesis</span>
-        <h1 style="margin-top:0.5rem;border:none;padding:0;">Al-Fe-Cu準結晶を形成する組成の調査</h1>
-        <p>2026.04.10</p>
-      </div>
-      <div class="article-content" style="max-width:800px;">
-        <h2>背景</h2>
-        <p>Al-Fe-Cu系において準結晶（i相）が形成される組成範囲を実験的に調査した。</p>
-        <h2>結論</h2>
-        <p>各種金属原料を混合・加熱し、粉砕・混合・再加熱を繰り返すことで、i相が得られた。</p>
-        <h2>引用文献</h2>
-        <p>[1] XXXX<br>[2] XXXX</p>
-        <div class="mt-4"><a href="research.html" class="btn btn-outline">&larr; 研究一覧に戻る</a></div>
-      </div>
-    </main>
+    <main class="main-content">"""
+
+FOOT = """    </main>
   </div>
   <script src="js/script.js"></script>
 </body>
-</html>
+</html>"""
+
+def head(title, canonical):
+    return f"""<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIY Chem. | {title}</title>
+  <meta name="description" content="材料化学の在野研究者によるDIY Chem.の研究成果・メモ・リンク集">
+  <link rel="canonical" href="https://diychem.jp/{canonical}">
+  <link rel="stylesheet" href="css/style.css">
+{GA}
+</head>
+<body>"""
+
+def write(filename, title, canonical, body):
+    content = head(title, canonical) + "\n" + nav() + "\n" + body + "\n" + FOOT
+    with open(filename, 'w', encoding='utf-8') as f:
+        f.write(content)
+    print(f"Written: {filename}")
+
+write("database-article-1.html", "無機材料 結晶構造データセット", "database-article-1.html", """      <div class="page-header mb-4">
+        <span class="card-tag">Data</span>
+        <h1 style="margin-top:0.5rem;border:none;padding:0;">無機材料 結晶構造データセット</h1>
+        <p>2026.05.09</p>
+      </div>
+      <div class="article-content" style="max-width:800px;">
+        <p>過去に合成した試料のXRDパターンとリートベルト解析結果を整理したデータセットです。</p>
+        <div class="mt-4"><a href="database.html" class="btn btn-outline">&larr; データ一覧に戻る</a></div>
+      </div>""")
+
+write("tool-article-1.html", "画像の背景除去", "tool-article-1.html", """      <div class="page-header mb-4">
+        <span class="card-tag memo">App</span>
+        <h1 style="margin-top:0.5rem;border:none;padding:0;">画像の背景除去</h1>
+      </div>
+      <div class="article-content" style="max-width:800px;">
+        <p>ここに画像の背景除去ツールのインターフェースが入ります。(仮ページ)</p>
+        <div class="mt-4"><a href="tool.html" class="btn btn-outline">&larr; ツール一覧に戻る</a></div>
+      </div>""")
+
+write("tool-article-2.html", "スペクトルのバックグラウンド分離", "tool-article-2.html", """      <div class="page-header mb-4">
+        <span class="card-tag memo">App</span>
+        <h1 style="margin-top:0.5rem;border:none;padding:0;">スペクトルのバックグラウンド分離</h1>
+      </div>
+      <div class="article-content" style="max-width:800px;">
+        <p>ここにスペクトルのバックグラウンド分離ツールのインターフェースが入ります。(仮ページ)</p>
+        <div class="mt-4"><a href="tool.html" class="btn btn-outline">&larr; ツール一覧に戻る</a></div>
+      </div>""")
+
+print("Phase 4 done.")

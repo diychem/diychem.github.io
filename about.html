@@ -13,7 +13,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-SF80B3JYTM');
   </script>
 </head>
@@ -26,43 +25,42 @@
       <span class="hamburger-line"></span>
     </button>
   </header>
-
   <div class="overlay" id="overlay"></div>
-
   <div class="app-container">
     <aside class="sidebar" id="sidebar">
       <div class="site-brand">
         <h1>DIY <span>Chem.</span></h1>
-        <p>Research & Archives</p>
+        <p>Research &amp; Archives</p>
       </div>
-            <nav class="nav-menu">
+      <nav class="nav-menu">
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html" class="nav-link">ホーム / Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">私たち / About Us</a></li>
           <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
+            <a href="research.html" class="nav-link nav-parent" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-research">
-              <li><a href="research-article-1.html" class="nav-link">混合原子価酸化物の合成方法の検討</a></li>
-              <li><a href="research-article-2.html" class="nav-link">Al-Fe-Cu準結晶を形成する組成の調査</a></li>
-              <li><a href="research-article-3.html" class="nav-link">無機材料データベースからの新規構造探索</a></li>
-              <li><a href="research-article-4.html" class="nav-link">機械学習を用いた相図の予測手法</a></li>
+              <li><a href="research.html?tag=Synthesis" class="nav-link">物質の合成 / Synthesis</a></li>
+              <li><a href="research.html?tag=Database" class="nav-link">データベース / Database</a></li>
+              <li><a href="research.html?tag=Methodology" class="nav-link">手法の提案 / Methodology</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
+            <a href="memo.html" class="nav-link nav-parent" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-memo">
-              <li><a href="memo-article-1.html" class="nav-link">ヤフーオークションの活用</a></li>
-              <li><a href="memo-article-2.html" class="nav-link">配位数に依存しないイオン半径の検討</a></li>
-              <li><a href="memo-article-3.html" class="nav-link">XRD測定時間短縮の検討</a></li>
-              <li><a href="memo-article-4.html" class="nav-link">データベースの活用</a></li>
+              <li><a href="memo.html?tag=DIY" class="nav-link">自作 / DIY</a></li>
+              <li><a href="memo.html?tag=Program" class="nav-link">プログラム / Program</a></li>
+              <li><a href="memo.html?tag=Column" class="nav-link">コラム / Column</a></li>
             </ul>
           </li>
+          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
+          <li class="nav-item"><a href="document.html" class="nav-link">資料 / Document</a></li>
+          <li class="nav-item"><a href="database.html" class="nav-link">データ / Database</a></li>
+          <li class="nav-item"><a href="equipment.html" class="nav-link">設備 / Equipment</a></li>
           <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
           <li class="nav-item"><a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a></li>
         </ul>
       </nav>
     </aside>
-
     <main class="main-content">
       <div class="page-header mb-4 bg-about">
         <h1>私たち / About Us</h1>
@@ -73,14 +71,15 @@
         <p>材料化学の分野において、所属機関を持たずに独立して研究を行う在野研究者（DIY Chem.）です。高価な実験設備に頼らず、身近な材料とオープンソース技術を活用した「DIY」アプローチで化学の探求を行っています。</p>
         <p>当サイト（https://diychem.jp/）は、日々の実験記録、合成結果、そしてデータ分析の手法を整理し、広く共有するためのプラットフォームです。</p>
       </section>
-      <section>
+      <section class="mb-4">
         <h2>研究テーマ</h2>
         <ul>
-          <li class="mb-2"><strong>① 物質の物質の合成</strong>: 安価で入手しやすい原料から、新規な機能性材料（有機無機ハイブリッドなど）を設計・合成する手法の開拓。</li>
+          <li class="mb-2"><strong>① 物質の合成</strong>: 安価で入手しやすい原料から、新規な機能性材料（有機無機ハイブリッドなど）を設計・合成する手法の開拓。</li>
           <li class="mb-2"><strong>② データベースの作成と分析</strong>: オープンデータを活用した物性予測や、自身で測定した実験データの体系的なデータベース化と機械学習の適用。</li>
           <li class="mb-2"><strong>③ 新しい研究手法の提案</strong>: 3Dプリンタやマイコンを活用した自作の実験装置や、安価なセンサーを用いた簡易的な測定・分析手法の構築。</li>
         </ul>
       </section>
+      <p style="color:var(--accent-strong-dark);font-weight:bold;margin-top:2rem;padding:1rem;background:rgba(255,159,127,0.1);border-left:4px solid var(--accent-strong);">このサイトのコンテンツに対して、著作権は放棄しておらず、引用する際は出典を明記するようにお願いします。</p>
     </main>
   </div>
   <script src="js/script.js"></script>

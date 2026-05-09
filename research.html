@@ -13,7 +13,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-SF80B3JYTM');
   </script>
 </head>
@@ -26,91 +25,86 @@
       <span class="hamburger-line"></span>
     </button>
   </header>
-
   <div class="overlay" id="overlay"></div>
-
   <div class="app-container">
     <aside class="sidebar" id="sidebar">
       <div class="site-brand">
         <h1>DIY <span>Chem.</span></h1>
-        <p>Research & Archives</p>
+        <p>Research &amp; Archives</p>
       </div>
-            <nav class="nav-menu">
+      <nav class="nav-menu">
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html" class="nav-link">ホーム / Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">私たち / About Us</a></li>
           <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
+            <a href="research.html" class="nav-link nav-parent" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-research">
-              <li><a href="research-article-1.html" class="nav-link">混合原子価酸化物の合成方法の検討</a></li>
-              <li><a href="research-article-2.html" class="nav-link">Al-Fe-Cu準結晶を形成する組成の調査</a></li>
-              <li><a href="research-article-3.html" class="nav-link">無機材料データベースからの新規構造探索</a></li>
-              <li><a href="research-article-4.html" class="nav-link">機械学習を用いた相図の予測手法</a></li>
+              <li><a href="research.html?tag=Synthesis" class="nav-link">物質の合成 / Synthesis</a></li>
+              <li><a href="research.html?tag=Database" class="nav-link">データベース / Database</a></li>
+              <li><a href="research.html?tag=Methodology" class="nav-link">手法の提案 / Methodology</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
+            <a href="memo.html" class="nav-link nav-parent" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-memo">
-              <li><a href="memo-article-1.html" class="nav-link">ヤフーオークションの活用</a></li>
-              <li><a href="memo-article-2.html" class="nav-link">配位数に依存しないイオン半径の検討</a></li>
-              <li><a href="memo-article-3.html" class="nav-link">XRD測定時間短縮の検討</a></li>
-              <li><a href="memo-article-4.html" class="nav-link">データベースの活用</a></li>
+              <li><a href="memo.html?tag=DIY" class="nav-link">自作 / DIY</a></li>
+              <li><a href="memo.html?tag=Program" class="nav-link">プログラム / Program</a></li>
+              <li><a href="memo.html?tag=Column" class="nav-link">コラム / Column</a></li>
             </ul>
           </li>
+          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
+          <li class="nav-item"><a href="document.html" class="nav-link">資料 / Document</a></li>
+          <li class="nav-item"><a href="database.html" class="nav-link">データ / Database</a></li>
+          <li class="nav-item"><a href="equipment.html" class="nav-link">設備 / Equipment</a></li>
           <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
           <li class="nav-item"><a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a></li>
         </ul>
       </nav>
     </aside>
-
     <main class="main-content">
       <div class="page-header mb-4 bg-research">
         <h1 id="page-title">研究 / Research</h1>
         <p>物質の設計、データ分析、および新手法のアーカイブ</p>
       </div>
       <div class="card-grid" id="card-container">
-        <!-- Card 1 -->
-        <article class="card" data-tag="Synthesis">
-          <span class="card-tag">Synthesis</span>
-          <h3>混合原子価酸化物の合成方法の検討</h3>
-          <p>酸化物とTiを同封して真空引きした後に加熱することで、混合原子価の状態で含む酸化物が得られた。</p>
-          <div class="card-footer">
-            <time datetime="2026-05-01">2026.05.01</time>
-            <a href="research-article-1.html" style="font-weight:600;">続きを読む &rarr;</a>
-          </div>
-        </article>
-        <!-- Card 2 -->
-        <article class="card" data-tag="Synthesis">
-          <span class="card-tag">Synthesis</span>
-          <h3>Al-Fe-Cu準結晶を形成する組成の調査</h3>
-          <p>各種金属原料を混合・加熱し、粉砕・混合・再加熱を繰り返すことで、i相が得られた。</p>
-          <div class="card-footer">
-            <time datetime="2026-04-29">2026.04.29</time>
-            <a href="research-article-2.html" style="font-weight:600;">続きを読む &rarr;</a>
-          </div>
-        </article>
-        <!-- Card 3 -->
-        <article class="card" data-tag="Database">
-          <span class="card-tag">Database</span>
-          <h3>無機材料データベースからの新規構造探索</h3>
-          <p>特定の配位環境と電子状態を持つ物質群を抽出するスクリーニング手法を構築した。</p>
-          <div class="card-footer">
-            <time datetime="2026-04-26">2026.04.26</time>
-            <a href="research-article-3.html" style="font-weight:600;">続きを読む &rarr;</a>
-          </div>
-        </article>
-        <!-- Card 4 -->
         <article class="card" data-tag="Methodology">
           <span class="card-tag">Methodology</span>
           <h3>機械学習を用いた相図の予測手法</h3>
           <p>既知の相図データを学習データとして、未探索の合金系の相図を予測する手法を提案した。</p>
           <div class="card-footer">
-            <time datetime="2026-04-18">2026.04.18</time>
+            <time datetime="2026-05-02">2026.05.02</time>
             <a href="research-article-4.html" style="font-weight:600;">続きを読む &rarr;</a>
           </div>
         </article>
+        <article class="card" data-tag="Database">
+          <span class="card-tag">Database</span>
+          <h3>無機材料データベースからの新規構造探索</h3>
+          <p>特定の配位環境と電子状態を持つ物質群を抽出するスクリーニング手法を構築した。</p>
+          <div class="card-footer">
+            <time datetime="2026-04-29">2026.04.29</time>
+            <a href="research-article-3.html" style="font-weight:600;">続きを読む &rarr;</a>
+          </div>
+        </article>
+        <article class="card" data-tag="Synthesis">
+          <span class="card-tag">Synthesis</span>
+          <h3>Al-Fe-Cu準結晶を形成する組成の調査</h3>
+          <p>各種金属原料を混合・加熱し、粉砕・混合・再加熱を繰り返すことで、i相が得られた。</p>
+          <div class="card-footer">
+            <time datetime="2026-04-10">2026.04.10</time>
+            <a href="research-article-2.html" style="font-weight:600;">続きを読む &rarr;</a>
+          </div>
+        </article>
+        <article class="card" data-tag="Synthesis">
+          <span class="card-tag">Synthesis</span>
+          <h3>混合原子価酸化物の合成方法の検討</h3>
+          <p>酸化物とTiを同封して真空引きした後に加熱することで、混合原子価の状態で含む酸化物が得られた。</p>
+          <div class="card-footer">
+            <time datetime="2026-03-31">2026.03.31</time>
+            <a href="research-article-1.html" style="font-weight:600;">続きを読む &rarr;</a>
+          </div>
+        </article>
       </div>
-      <div id="no-cards-msg" style="display:none; margin-top:2rem; color:#666;">該当する記事が見つかりません。</div>
+      <div id="no-cards-msg" style="display:none;margin-top:2rem;color:#666;">該当する記事が見つかりません。</div>
     </main>
   </div>
   <script src="js/script.js"></script>

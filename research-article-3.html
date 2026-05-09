@@ -13,7 +13,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-SF80B3JYTM');
   </script>
 </head>
@@ -26,61 +25,56 @@
       <span class="hamburger-line"></span>
     </button>
   </header>
-
   <div class="overlay" id="overlay"></div>
-
   <div class="app-container">
     <aside class="sidebar" id="sidebar">
       <div class="site-brand">
         <h1>DIY <span>Chem.</span></h1>
-        <p>Research & Archives</p>
+        <p>Research &amp; Archives</p>
       </div>
-            <nav class="nav-menu">
+      <nav class="nav-menu">
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html" class="nav-link">ホーム / Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">私たち / About Us</a></li>
           <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
+            <a href="research.html" class="nav-link nav-parent" data-toggle="collapse" data-target="submenu-research">研究 / Research<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-research">
-              <li><a href="research-article-1.html" class="nav-link">混合原子価酸化物の合成方法の検討</a></li>
-              <li><a href="research-article-2.html" class="nav-link">Al-Fe-Cu準結晶を形成する組成の調査</a></li>
-              <li><a href="research-article-3.html" class="nav-link">無機材料データベースからの新規構造探索</a></li>
-              <li><a href="research-article-4.html" class="nav-link">機械学習を用いた相図の予測手法</a></li>
+              <li><a href="research.html?tag=Synthesis" class="nav-link">物質の合成 / Synthesis</a></li>
+              <li><a href="research.html?tag=Database" class="nav-link">データベース / Database</a></li>
+              <li><a href="research.html?tag=Methodology" class="nav-link">手法の提案 / Methodology</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
+            <a href="memo.html" class="nav-link nav-parent" data-toggle="collapse" data-target="submenu-memo">メモ / Memo<span class="toggle-icon">▼</span></a>
             <ul class="sub-menu" id="submenu-memo">
-              <li><a href="memo-article-1.html" class="nav-link">ヤフーオークションの活用</a></li>
-              <li><a href="memo-article-2.html" class="nav-link">配位数に依存しないイオン半径の検討</a></li>
-              <li><a href="memo-article-3.html" class="nav-link">XRD測定時間短縮の検討</a></li>
-              <li><a href="memo-article-4.html" class="nav-link">データベースの活用</a></li>
+              <li><a href="memo.html?tag=DIY" class="nav-link">自作 / DIY</a></li>
+              <li><a href="memo.html?tag=Program" class="nav-link">プログラム / Program</a></li>
+              <li><a href="memo.html?tag=Column" class="nav-link">コラム / Column</a></li>
             </ul>
           </li>
+          <li class="nav-item"><a href="tool.html" class="nav-link">ツール / Tool</a></li>
+          <li class="nav-item"><a href="document.html" class="nav-link">資料 / Document</a></li>
+          <li class="nav-item"><a href="database.html" class="nav-link">データ / Database</a></li>
+          <li class="nav-item"><a href="equipment.html" class="nav-link">設備 / Equipment</a></li>
           <li class="nav-item"><a href="links.html" class="nav-link">リンク / Link</a></li>
           <li class="nav-item"><a href="privacy.html" class="nav-link">プライバシーポリシー / Privacy</a></li>
         </ul>
       </nav>
     </aside>
-
     <main class="main-content">
       <div class="page-header mb-4">
         <span class="card-tag">Database</span>
-        <h1 style="margin-top:0.5rem; border:none; padding:0;">無機材料データベースからの新規構造探索</h1>
-        <p>2026.04.26</p>
+        <h1 style="margin-top:0.5rem;border:none;padding:0;">無機材料データベースからの新規構造探索</h1>
+        <p>2026.04.29</p>
       </div>
-      <div class="article-content" style="max-width: 800px;">
+      <div class="article-content" style="max-width:800px;">
         <h2>背景</h2>
-        <p>既存の無機材料データベースには膨大な結晶構造データが蓄積されているが、未合成の安定な構造や特異な物性を持つ物質を効率的に見つけ出すための網羅的なスクリーニング手法が不足している。</p>
+        <p>ICSDやMaterials Projectなどの公開データベースを活用し、特定の配位環境を持つ物質群を系統的に探索した。</p>
         <h2>結論</h2>
-        <p>Materials Project等の公開データベースを活用し、特定の配位環境と電子状態を持つ物質群を抽出するスクリーニング手法を構築した結果、有望な新規構造の候補を複数見出した。</p>
-        <h2>補足</h2>
-        <p>スクリーニング条件を工夫することで計算コストを抑えつつ、熱力学的に安定であると予測される構造に絞り込むことができた。今後は抽出された候補物質の実際の合成実験を進める予定である。</p>
+        <p>特定の配位環境と電子状態を持つ物質群を抽出するスクリーニング手法を構築した。</p>
         <h2>引用文献</h2>
-        <p>[1] XXXX<br>[2] XXXX<br>[3] XXXX</p>
-        <div class="mt-4">
-          <a href="research.html" class="btn btn-outline">&larr; 研究一覧に戻る</a>
-        </div>
+        <p>[1] XXXX<br>[2] XXXX</p>
+        <div class="mt-4"><a href="research.html" class="btn btn-outline">&larr; 研究一覧に戻る</a></div>
       </div>
     </main>
   </div>
